@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/perfil.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-bottom py-2" role="navigation" id="navbar">
+        <button class="btn btn-dark rounded-pill px-4 mx-4 " type="button" id="boton"><a class="text-white text-decoration-none fs-4" href="./index.html"><i class ="icon ion-md-home mx-2" ></i>Home</a>
+        </button>
+        <a class="px-4 py-4" href="./mensaje.html"><i class="icon ion-md-text"></i></a>
+        <a class="px-4 py-4" href="./favoritos.html"><i class="icon ion-md-heart"></i></a>
+        <a class="px-4 py-4" href="./perfil.html"><i class="icon ion-md-person"></i></a>
+        </div>
+    </nav>
+    <div id="contenedor">
+        <h1 class="fs-1">Perfil</h1>
+    </div>
+    <div class="container-fluid h-100">
+        <form id="form">
+            <div class="div-form">
+                <img class="rounded-circle mx-auto d-block cargar-img" id="myImg" src="#" width="200px" height="200px">
+                <h1 class="text-center">Juan Mendez</h1>
+                <input type='file'>
+            </div>
+            <div class="div-form">
+                <label id="name-label">Nombre</label>
+                <input type="text"  id="name" placeholder="Juan">
+            </div>
+            <div class="div-form">
+                <label id="nroTarjeta-label">Apellido</label>
+                <input type="number"required id="nroTarjeta" placeholder="Mendez">
+            </div>
+            <div class="div-form">
+                <label id="email-label">Email</label>
+                <input type="email"required id="email" placeholder="juan.mendez@gmail.com">
+            </div>
+             <div> 
+                <button class="btn btn-dark rounded-pill px-4 my-2 fs-3" type="button" id="submit">Guardar</button>   
+            </div>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/perfil.js"></script>
+</body>
+</html>

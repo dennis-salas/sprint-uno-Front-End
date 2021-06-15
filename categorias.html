@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/categorias.css">
+    <title>Mascotas</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" id="navbar">
+        <button class="btn btn-dark rounded-pill px-4 mx-4 " type="button" id="boton"><a class="text-white text-decoration-none fs-4" href="./index.html"><i class ="icon ion-md-home mx-2" ></i>Home</a>
+        </button>
+        <a class="px-4 py-4" href="#"><i class="icon ion-md-text"></i></a>
+        <a class="px-4 py-4" href="./favoritos.html"><i class="icon ion-md-heart"></i></a>
+        <a class="px-4 py-4" href="./perfil.html"><i class="icon ion-md-person"></i></a>
+        </div>
+    </nav>
+    <div class="container-fluid row">
+        <div class="col-12 mt-4 pt-4">
+            <h1 class="fs-1 text-dark">Adopta una adorable mascota</h1>
+            <p class="fs-4 text-dark mt-4 pt-4">Categorías de mascotas</p>
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                <li class="nav-item mx-2" role="presentation">
+                    <button class="nav-link active bg-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true"><img id="img-2"
+                            class="rounded-circle mx-2" src="./images/logo-perro.jpg" alt="">Perros</button>
+                </li>
+                <li class="nav-item mx-2" role="presentation">
+                    <button class="nav-link bg-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false"><img id="img-2"
+                            class="rounded-circle mx-2" src="./images/logo-gato.jpg" alt="">Gatos</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row my-4" id="collapseExample">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row my-4" id="collapseExample2">
+                    </div>
+                </div>
+            </div>
+        <div>
+    </div>
+    
+    <script src="./scripts/mains.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

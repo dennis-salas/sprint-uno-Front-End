@@ -1,0 +1,31 @@
+body{
+    background-color: #FEC7D7;
+}
+#img-1{
+    width: 80px;
+}
+#img-2{
+    width: 80px;
+}
+#navbar{
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+    position: fixed;
+}
+.img-fluid{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#contacto{
+    display: flex;
+}
+#maria-dolores{
+    width: 100px;
+}
+#contactar{
+    margin-left: 200px;
+    padding: 0 50px;
+}
