@@ -11,4 +11,28 @@ window.addEventListener('load', function() {
         }
     });
   });
-      
+
+  const  datos=  [ ];
+
+  document.querySelector("#form").addEventListener("submit", e => {
+
+      let nombre = document.querySelector("#nombre").value;
+      let apellido = document.querySelector("#apellido").value;
+      let correo = document.querySelector("#email").value;
+
+
+      const datosPersonas = {
+        nombre: nombre,
+        apellido: apellido,
+        correo: correo
+      }
+
+      datos.push(datosPersonas);
+      e.preventDefault();
+    guardarDatos();
+    document.querySelector("#form").reset();
+
+  })
+  const guardarDatos = () => {
+      localStorage.setItem("Datos", JSON.stringify(datos))
+  }
