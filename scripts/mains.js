@@ -58,10 +58,10 @@ const pets = [{
 //console.log(pets);
 const contenedor = document.getElementById("collapseExample");
 const contenedor2 = document.getElementById("collapseExample2");
+const contendorMascotas = document.getElementById("contenedorMascotas");
 let template = "";
 let template2 = "";
 let favoritos = {};
-
 pets.forEach ( pets => {
     if (pets.id <= 4){
         template += `
@@ -81,16 +81,17 @@ imagen.forEach ( elemento => {
         let id = e.target.id
         //console.log(id);
         consultarPorId(id);
-        onClickPets(e)
-        addFavoritos(e);
+        onClickPets(e);
 })
 })
 
 const consultarPorId = (id) => {
     const idNumber = parseInt(id);
     const [filtro] = pets.filter((element) => element.id === idNumber);
-    console.log(filtro);
+    //console.log(filtro);
+    setFavoritos(filtro);
 }
+
 const onClickPets = (e) => {
     let idPets = '';
     if (e.target.getAttribute('id')) {
@@ -102,9 +103,22 @@ const onClickPets = (e) => {
     window.location.href = `?idMascota=${idPets}`;
 }
 
-const pintarfavoritos = (data) => {
-    const contenedor = document.getElementById("contenedor")
-    contenedor.innerHTML = "";
-    contenedor.innerHTML = ` <img src="${pets.img}" id=${pets.id} alt="" class="img-fluid">`;
+const setFavoritos = (data) => {
+   // console.log(data)
+    const Mascota = {
+          id: data.id,
+          imagen: data.img
+   }
+   
+    pintarFavoritos()   
 }
-    
+ 
+const pintarFavoritos = () => {
+    let items = "";
+    Mascota.forEach ( Mascota => {
+        items += `
+        <img src="${Mascota.img}"  alt="${Mascota.id}" class="img-fluid">`
+    })
+
+    contendorMascotas.innerHTML = items
+} 

@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
             
         }
     });
-  });
+});
 
   const  datos=  [ ];
 
@@ -20,12 +20,14 @@ window.addEventListener('load', function() {
       let apellido = document.querySelector("#apellido").value;
       let correo = document.querySelector("#email").value;
 
-
       const datosPersonas = {
         nombre: nombre,
         apellido: apellido,
         correo: correo
       }
+
+      let nombrePerfil = document.querySelector(".text-center");
+      nombrePerfil.innerHTML = datosPersonas.nombre + " " +datosPersonas.apellido;
 
       datos.push(datosPersonas);
       e.preventDefault();
